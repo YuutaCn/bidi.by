@@ -1,22 +1,20 @@
 // colors
 :root {
   // base
-  --font-neue: "Neue Machina", sans-serif;
-  --font-inter: "Inter", sans-serif;
-  --font-nova: "Proxima Nova", sans-serif;
-  --content-width: #{rem(1170)};
-  --container-offset: #{rem(0)};
+  --font-family: "Heebo", sans-serif;
+  --content-width: #{rem(1320)};
+  --container-offset: #{rem(40)};
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
-  @media (max-width: (#{rem(1200)})) {
+  @media screen and (max-width: (#{rem(1200)})) {
+    --container-offset: #{rem(40)};
+  }
+
+  @media screen and (max-width: (#{rem(900)})) {
     --container-offset: #{rem(15)};
   }
 
-  @media (max-width: (#{rem(1023)})) {
-    --container-offset: #{rem(15)};
-  }
-
-  @media (max-width: (#{rem(767)})) {
+  @media screen and (max-width: (#{rem(450)})) {
     --container-offset: #{rem(10)};
   }
 
@@ -33,6 +31,8 @@
   --dark-color-60: #31313199;
   --dark-color-40: #30303066;
   --dark-color-20: #31313133;
+  --accent-color: #31c77f;
+  --purple-color: #6b39bd;
 
   // cubic
   --cubic-bezier: cubic-bezier(.62,.33,.53,.89);

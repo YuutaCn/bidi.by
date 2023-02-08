@@ -7,19 +7,19 @@
 }
 
 @mixin small-tablet {
-  @media (max-width: (#{rem(1023)})) {
+  @media (max-width: (#{rem(900)})) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media (max-width: (#{rem(767)})) {
+  @media (max-width: (#{rem(450)})) {
     @content;
   }
 }
 
 @mixin small-mobile {
-  @media (max-width: (#{rem(374)})) {
+  @media (max-width: (#{rem(360)})) {
     @content;
   }
 }
